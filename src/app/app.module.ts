@@ -12,6 +12,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { SesionComponent } from './sesion/sesion.component';
 import { PracticasComponent } from './practicas/practicas.component';
 import { FormsModule } from '@angular/forms';
+import { CargarscriptsService } from './cargarscripts.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,9 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule 
   ],
-  providers: [],
+  providers: [
+    CargarscriptsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
