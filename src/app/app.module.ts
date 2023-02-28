@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +14,16 @@ import { PracticasComponent } from './practicas/practicas.component';
 import { FormsModule } from '@angular/forms';
 import { CargarscriptsService } from './cargarscripts.service';
 
+/*componentes para rutas*/
+
+import {RouterModule, Routes} from '@angular/router'
+
+
+/*declaracion de rutas*/
+const appRoute: Routes = [
+
+
+ ];
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +39,7 @@ import { CargarscriptsService } from './cargarscripts.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule 
+    RouterModule.forRoot(appRoute,{enableTracing:true})
   ],
   providers: [
     CargarscriptsService
