@@ -30,11 +30,8 @@ const appRoute: Routes = [
 {path:'Info',component: InicioComponent  },
 {path:'Universidades',component: InicioComponent  },
 {path:'Inscripcion Uni',component: InicioComponent  },
-{path:'Ser Uni',component: InicioComponent  },
+{path:'Serv Uni',component: InicioComponent  },
 {path:'Contactos',component: InicioComponent  },
-
-
-
 
  ];
 @NgModule({
