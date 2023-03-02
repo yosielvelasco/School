@@ -21,7 +21,7 @@ import {RouterModule, Routes} from '@angular/router'
 
 /*declaracion de rutas*/
 const appRoute: Routes = [
-
+{path:'Inicio',component: InicioComponent  },
 
  ];
 @NgModule({
