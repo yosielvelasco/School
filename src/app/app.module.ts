@@ -16,12 +16,25 @@ import { CargarscriptsService } from './cargarscripts.service';
 
 /*componentes para rutas*/
 
-import {RouterModule, Routes} from '@angular/router'
+import {RouterModule, Routes} from '@angular/router';
+import { InfoComponent } from './content/info/info.component';
+import { UniversidadesComponent } from './content/universidades/universidades.component';
+import { InscripcionUniComponent } from './content/inscripcion-uni/inscripcion-uni.component';
+import { ServUniComponent } from './content/serv-uni/serv-uni.component';
+import { ContactosComponent } from './content/contactos/contactos.component'
 
 
 /*declaracion de rutas*/
 const appRoute: Routes = [
 {path:'Inicio',component: InicioComponent  },
+{path:'Info',component: InicioComponent  },
+{path:'Universidades',component: InicioComponent  },
+{path:'Inscripcion Uni',component: InicioComponent  },
+{path:'Ser Uni',component: InicioComponent  },
+{path:'Contactos',component: InicioComponent  },
+
+
+
 
  ];
 @NgModule({
@@ -34,7 +47,12 @@ const appRoute: Routes = [
     FooterComponent,
     RegistroComponent,
     SesionComponent,
-    PracticasComponent
+    PracticasComponent,
+    InfoComponent,
+    UniversidadesComponent,
+    InscripcionUniComponent,
+    ServUniComponent,
+    ContactosComponent
   ],
   imports: [
     BrowserModule,
