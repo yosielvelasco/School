@@ -13,7 +13,7 @@ import { SesionComponent } from './sesion/sesion.component';
 import { PracticasComponent } from './practicas/practicas.component';
 import { FormsModule } from '@angular/forms';
 import { CargarscriptsService } from './cargarscripts.service';
-
+import {AngularFireModule} from '@angular/fire/compat';
 /*componentes para rutas*/
 
 import {RouterModule, Routes} from '@angular/router';
@@ -55,6 +55,16 @@ const appRoute: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule, 
+    AngularFireModule.initializeApp({
+      apiKey: "AIzaSyDnahQg4PK0UcdRxQZRqbLloFhJUGT1ME0",
+  authDomain: "school-e3d2e.firebaseapp.com",
+  projectId: "school-e3d2e",
+  storageBucket: "school-e3d2e.appspot.com",
+  messagingSenderId: "392433728201",
+  appId: "1:392433728201:web:3c225a45cbf71c200a6b18",
+  measurementId: "G-CG83TT09FY"
+ }), 
     RouterModule.forRoot(appRoute,{enableTracing:true})
   ],
   providers: [
