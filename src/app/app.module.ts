@@ -26,14 +26,15 @@ import { ContactosComponent } from './content/contactos/contactos.component'
 
 /*declaracion de rutas*/
 const appRoute: Routes = [
-{path:'Inicio',component: InicioComponent  },
-{path:'Info',component: InicioComponent  },
-{path:'Universidades',component: InicioComponent  },
-{path:'Inscripcion Uni',component: InicioComponent  },
-{path:'Serv Uni',component: InicioComponent  },
-{path:'Contactos',component: InicioComponent  },
+  {path:'',component: InicioComponent  },
+  {path:'Inicio',component: InicioComponent  },
+  {path:'Info',component: InfoComponent  },
+  {path:'Universidades',component: UniversidadesComponent  },
+  {path:'InscripcionUni',component: InscripcionUniComponent  },
+  {path:'ServUni',component: ServUniComponent  },
+  {path:'Contactos',component: ContactosComponent  },
+];
 
- ];
 @NgModule({
   declarations: [
     AppComponent,

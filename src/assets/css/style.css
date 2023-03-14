@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  color: #1bbd36;
+  color: #1b97bd;
   text-decoration: none;
 }
 
 a:hover {
-  color: #2ae149;
+  color: #a1e12a;
   text-decoration: none;
 }
 
@@ -100,7 +100,7 @@ h6 {
 }
 
 #header .logo a span {
-  color: #1bbd36;
+  color: #671bbd;
 }
 
 #header .logo img {
@@ -128,7 +128,7 @@ h6 {
 }
 
 .header-social-links a:hover {
-  color: #1bbd36;
+  color: #1b61bd;
 }
 
 @media (max-width: 768px) {
@@ -202,7 +202,7 @@ h6 {
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
-  border-top: 2px solid #1bbd36;
+  border-top: 2px solid #1bb2bd;
 }
 
 .navbar .dropdown ul li {
@@ -404,8 +404,8 @@ h6 {
 #hero .carousel-content {
   background: rgba(4, 4, 4, 0.7);
   padding: 20px;
-  color: #fff;
-  border-top: 5px solid #1bbd36;
+  color: #ffffff;
+  border-top: 5px solid #1e1bbd;
 }
 
 #hero .carousel-content h2 {
@@ -433,7 +433,7 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #1bbd36;
+  background: #1bbdbd;
   color: #fff;
   text-decoration: none;
 }
@@ -1428,16 +1428,16 @@ section {
 }
 
 .contact .info {
-  background: #fff;
+  background: #ffffff;
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #1bbd36;
+  color: #bd1b1b;
   float: left;
   width: 44px;
   height: 44px;
-  border: 1px solid #1bbd36;
+  border: 1px solid #bd561b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1528,7 +1528,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #1bbd36;
+  border-color: #261bbd;
 }
 
 .contact .php-email-form input {
@@ -1604,7 +1604,7 @@ section {
 }
 
 .blog .entry .entry-title a:hover {
-  color: #1bbd36;
+  color: #8a1bbd;
 }
 
 .blog .entry .entry-meta {
