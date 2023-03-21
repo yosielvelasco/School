@@ -52,6 +52,7 @@ const appRoute: Routes = [
     ServUniComponent,
     ContactosComponent
   ],
+ 
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -72,4 +73,4 @@ const appRoute: Routes = [
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { } 
