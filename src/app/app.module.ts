@@ -30,9 +30,10 @@ const appRoute: Routes = [
   {path:'Inicio',component: InicioComponent  },
   {path:'Info',component: InfoComponent  },
   {path:'Universidades',component: UniversidadesComponent  },
-  {path:'InscripcionUni',component: InscripcionUniComponent  },
+  {path:'InscripcionUni',component: RegistroComponent  },
   {path:'ServUni',component: ServUniComponent  },
   {path:'Contactos',component: ContactosComponent  },
+  {path: 'Sesion', component:SesionComponent}
 ];
 
 @NgModule({
@@ -54,6 +55,7 @@ const appRoute: Routes = [
   ],
  
   imports: [
+    RouterModule.forRoot(appRoute,{enableTracing: true}),
     BrowserModule,
     AppRoutingModule,
     FormsModule, 

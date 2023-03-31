@@ -1,1 +1,45 @@
-<p>sesion works!</p>
+<form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table>
+        <img src="../../assets/imagenes/logo_white.png">
+        </table>
+        <br>
+        <div>
+        <!--Primer Campo-->
+        <label>
+            correo electronico:
+        </label>
+        <br>
+        <input type="email" name="correo" [(ngModel)]="form.correo" placeholder="Escribe tu correo.">
+        <br><br>
+        <!--Segundo Campo-->
+        <label>
+            contraseña:
+        </label>
+
+
+
+        <br>
+        <input type="password" name="contrasena" [(ngModel)]="form.contrasena" placeholder="Debe contener 8 caracteres.">
+       <br>
+       <a href="">
+        ¿olvidaste tu contraseña?
+        </a>
+        <br><br>
+        <!--BOTON-->
+       <button (click)="IniciarSesion()"> Ingresar <i class="fas fa-sign-in-alt"></i></button>
+       <br><br>
+       <a [routerLink]="['../registro']">
+        ¿no tienes cuenta? ¡Registrate!
+       </a>
+    </div>
+</form>

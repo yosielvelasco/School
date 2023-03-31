@@ -6,6 +6,9 @@ import { CargarscriptsService } from 'src/app/cargarscripts.service';
   styleUrls: ['./inscripcion-uni.component.css']
 })
 export class InscripcionUniComponent {
+  form={
+    nombre:"",
+  }
   constructor(private cargarscripts: CargarscriptsService){ 
     cargarscripts.carga([
       "assets/vendor/aos/aos.js",

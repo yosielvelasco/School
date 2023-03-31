@@ -11,7 +11,31 @@
         <li><a class="nav-link scrollto active" [routerLink]="['/Inicio']">Inicio</a></li>
         <li><a class="nav-link scrollto active" [routerLink]="['/Info']">Info</a></li>
         <li><a class="nav-link scrollto active" [routerLink]="['/Universidades']">Universidades</a></li>
-        <li><a class="nav-link scrollto active" [routerLink]="['/InscripcionUni']">Incripcion Uni</a></li>
+        <li><a class="nav-link scrollto active" [routerLink]="['/Sesion']">Inscripcion Uni</a></li>
         <li><a class="nav-link scrollto active" [routerLink]="['/ServUni']">Serv  Uni</a></li> 
         <li><a class="nav-link scrollto active" [routerLink]="['/Contactos']">Contactos</a></li>
-        
+
+        <header class="fondo" style="--bs-bg-opacity: .5;">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-2">
+                <img class="img-fluid" src="../..assets/imagenes/logo.png">
+                </div>
+                <div class="col-10">
+                  <a [routerLink]="['sesion']">
+                    <i class="fas fa-user-circle"></i> Iniciar Sesion
+                    </a>
+                    <a [routerLink]="['']" (click)="cerrarSesion()">
+                      <i class="fa-solid fa-right-from-bracket"></i>
+                      </a>
+                      <a href="https://api.whatsapp.com/send?phone=528671234567" target="_blank">
+                        <i class="fas fa-comment-dots"></i> Contacto
+                      </a>
+                      </div>
+                      </div>
+                    </div>
+                    </header>
+                   
+            
+
+         
