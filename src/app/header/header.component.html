@@ -11,7 +11,7 @@
         <li><a class="nav-link scrollto active" [routerLink]="['/Inicio']">Inicio</a></li>
         <li><a class="nav-link scrollto active" [routerLink]="['/Info']">Info</a></li>
         <li><a class="nav-link scrollto active" [routerLink]="['/Universidades']">Universidades</a></li>
-        <li><a class="nav-link scrollto active" [routerLink]="['/Sesion']">Inscripcion Uni</a></li>
+        <li><a class="nav-link scrollto active" [routerLink]="['/InscripcionUni']">Inscripcion Uni</a></li>
         <li><a class="nav-link scrollto active" [routerLink]="['/ServUni']">Serv  Uni</a></li> 
         <li><a class="nav-link scrollto active" [routerLink]="['/Contactos']">Contactos</a></li>
 
@@ -22,11 +22,11 @@
                 <img class="img-fluid" src="../..assets/imagenes/logo.png">
                 </div>
                 <div class="col-10">
-                  <a [routerLink]="['sesion']">
+                  <a [routerLink]="['Sesion']" *ngIf="usuario_activo==false">
                     <i class="fas fa-user-circle"></i> Iniciar Sesion
                     </a>
-                    <a [routerLink]="['']" (click)="cerrarSesion()">
-                      <i class="fa-solid fa-right-from-bracket"></i>
+                    <a [routerLink]="['']" *ngIf="usuario_activo==true" (click)="cerrarSesion()">
+                      <i class="fa-solid fa-right-from-bracket"></i> Cerrar Sesion
                       </a>
                       <a href="https://api.whatsapp.com/send?phone=528671234567" target="_blank">
                         <i class="fas fa-comment-dots"></i> Contacto
